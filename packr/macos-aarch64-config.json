@@ -1,0 +1,18 @@
+{
+    "platform": "macaarch64",
+    "icon": "packr/app.icns",
+    "jdk": "osx-aarch64-jdk",
+    "executable": "Eustaria",
+    "classpath": [
+        "target/Eustaria.jar"
+    ],
+    "mainclass": "net.runelite.launcher.Launcher",
+    "vmargs": [
+       "-Xmx512m",
+       "-Xss2m",
+       "-XX:CompileThreshold=1500",
+       "--add-opens=java.desktop/com.apple.eawt=ALL-UNNAMED",
+       "--add-opens=java.desktop/sun.awt=ALL-UNNAMED"
+    ],
+    "output": "native-osx-aarch64/Eustaria.app"
+}
